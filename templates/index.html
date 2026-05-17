@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASK MUUSTAA</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+                ASK MUUSTAA
+            </div>
+
+            <button id="newChatBtn">
+                + New Chat
+            </button>
+
+            <div id="history" class="history">
+
+            </div>
+
+        </div>
+
+        <div class="account">
+
+            MUSTAPHA
+
+        </div>
+
+    </aside>
+
+    <main class="chat-container">
+
+        <div id="chatBox" class="chat-box">
+
+        </div>
+
+        <form id="chatForm">
+
+            <textarea
+            id="messageInput"
+            placeholder="Message AI..."
+            required>
+            </textarea>
+
+            <div class="controls">
+
+    <button
+    type="button"
+    id="micBtn">
+        🎤
+    </button>
+
+    <button
+    type="submit">
+        Send
+    </button>
+
+</div>
+            </button>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
